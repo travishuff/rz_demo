@@ -1,12 +1,11 @@
 const pg = require('pg');
 
-// DATABASE_URL is defined as an environment variable
+// RZ_DEMO-DB-URI is defined as an environment variable
 
 const db = {};
 
-pg.defaults.ssl = true;
-pg.connect(process.env.DATABASE_URL, (err, db_) => {
-
+// pg.defaults.ssl = true;
+pg.connect(process.env.RZ_DEMO_DB_URI, (err, db_) => {
   if (err) console.error(`Error with database connection: ${err}`);
   console.log(`connected to postgres!`);
 
