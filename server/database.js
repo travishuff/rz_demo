@@ -1,6 +1,6 @@
 const pg = require('pg');
 
-// RZ_DEMO-DB-URI is defined as an environment variable
+// RZ_DEMO-DB-URI is defined as an environment variable with local instance of Postgres
 
 const db = {};
 
